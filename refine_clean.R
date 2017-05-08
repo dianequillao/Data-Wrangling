@@ -38,3 +38,6 @@ refine_original$product_smartphone <- ifelse(refine_original$product_code=='p', 
 refine_original$product_tv <- ifelse(refine_original$product_code=='v', 1, 0)
 refine_original$product_laptop <- ifelse(refine_original$product_code=='x', 1, 0)
 refine_original$product_tablet <- ifelse(refine_original$product_code=='q', 1, 0)
+
+# save new data as refine_clean.csv
+write.csv(refine_original, file = "refine_clean.csv")
